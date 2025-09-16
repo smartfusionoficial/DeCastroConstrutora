@@ -211,11 +211,26 @@ const Contato = () => {
               <div className="space-y-8">
                 {/* Mapa */}
                 <Card className="overflow-hidden">
-                  <div className="h-64 bg-gray-200 flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="h-12 w-12 mx-auto mb-2" />
-                      <p>Mapa do Google Maps</p>
-                      <p className="text-sm">Localização do escritório</p>
+                  <div className="h-64 relative">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.8!2d-40.2881122!3d-20.3542731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Fortaleza%2C%201520%20-%20Itapu%C3%A3%2C%20Vila%20Velha%20-%20ES%2C%2029101-575!5e0!3m2!1spt-BR!2sbr!4v1694876543210!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Localização De Castro Construtora"
+                      className="absolute inset-0"
+                    ></iframe>
+                    <div className="absolute top-4 left-4 bg-white px-3 py-2 rounded-lg shadow-lg">
+                      <div className="flex items-center text-sm">
+                        <MapPin className="h-4 w-4 text-blue-600 mr-2" />
+                        <span className="font-medium">De Castro Construtora</span>
+                      </div>
+                      <p className="text-xs text-gray-600 mt-1">
+                        Av. Fortaleza, 1520 - Itapuã
+                      </p>
                     </div>
                   </div>
                 </Card>
