@@ -28,19 +28,19 @@ const Footer = () => {
     {
       nome: "Instagram",
       icon: <Instagram className="h-6 w-6" />,
-      link: "#",
+      link: "https://www.instagram.com/decastroconstrutora/",
       color: "hover:text-pink-500"
     },
     {
       nome: "Facebook",
       icon: <Facebook className="h-6 w-6" />,
-      link: "#",
+      link: "https://www.facebook.com/DeCastroConstrutora",
       color: "hover:text-blue-600"
     },
     {
       nome: "YouTube",
       icon: <Youtube className="h-6 w-6" />,
-      link: "#",
+      link: "https://www.youtube.com/@decastroconstrutora",
       color: "hover:text-red-600"
     }
   ]
@@ -61,7 +61,9 @@ const Footer = () => {
                 <a
                   key={rede.nome}
                   href={rede.link}
-                  className={`text-gray-400 transition-colors duration-300 ${rede.color}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-gray-400 transition-colors duration-300 transform hover:scale-110 ${rede.color}`}
                   aria-label={rede.nome}
                 >
                   {rede.icon}
