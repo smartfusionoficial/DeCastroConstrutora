@@ -1,11 +1,13 @@
 import { Button } from '@/components/ui/button'
 import { MessageCircle } from 'lucide-react'
 import { useParallax } from '../hooks/useScrollAnimation'
+import { useNavigate } from 'react-router-dom'
 import AnimatedSection from './AnimatedSection'
 import heroImage from '../assets/carolina_caliari_hero.png'
 
 const HeroSection = () => {
   const offset = useParallax()
+  const navigate = useNavigate()
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -55,6 +57,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
+                onClick={() => navigate('/carolina-caliari')}
               >
                 Saiba Mais
               </Button>

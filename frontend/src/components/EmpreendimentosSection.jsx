@@ -51,16 +51,6 @@ const EmpreendimentosSection = () => {
       borderColor: 'border-orange-500',
       image: chiabaiImage,
       link: '/chiabai-martins'
-    },
-    {
-      id: 5,
-      nome: 'DE CASTRO',
-      subtitulo: 'CONSTRUTORA',
-      status: 'NOVO PROJETO',
-      statusColor: 'bg-purple-500',
-      borderColor: 'border-purple-500',
-      image: decastroImage,
-      link: '/de-castro'
     }
   ]
 
@@ -75,7 +65,7 @@ const EmpreendimentosSection = () => {
           </div>
         </AnimatedSection>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {empreendimentos.map((emp, index) => (
             <AnimatedSection 
               key={emp.id} 

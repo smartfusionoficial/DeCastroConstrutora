@@ -1,7 +1,9 @@
 import { Button } from '@/components/ui/button'
+import { useNavigate } from 'react-router-dom'
 import institucionalImage from '../assets/secao_institucional_predio_moderno.jpeg'
 
 const InstitucionalSection = () => {
+  const navigate = useNavigate()
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -41,6 +43,7 @@ const InstitucionalSection = () => {
             <Button 
               size="lg" 
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg"
+              onClick={() => navigate('/sobre')}
             >
               SAIBA MAIS
             </Button>
