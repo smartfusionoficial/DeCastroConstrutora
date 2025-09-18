@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 // Configuração do transporter de email (configurar com credenciais reais)
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST || 'smtp.gmail.com',
   port: process.env.SMTP_PORT || 587,
   secure: false,
@@ -17,6 +17,9 @@ const transporter = nodemailer.createTransporter({
 router.post('/', async (req, res) => {
   try {
     const { nome, email, telefone, empreendimento, mensagem, destinatario } = req.body;
+    
+    // Log da requisição para debug
+    console.log('Recebida requisição de contato:', { nome, email, telefone, empreendimento });
     
     // Validação básica
     if (!nome || !email || !mensagem) {
@@ -53,31 +56,43 @@ router.post('/', async (req, res) => {
       `
     };
     
-    // Enviar email (apenas se configurado)
+    let emailSent = false;
+    
+    // Tentar enviar email (apenas se configurado)
     if (process.env.SMTP_USER && process.env.SMTP_PASS) {
-      await transporter.sendMail(mailOptions);
+      try {
+        await transporter.sendMail(mailOptions);
+        emailSent = true;
+        console.log('Email enviado com sucesso para:', destinatario || 'borghborges@gmail.com');
+      } catch (emailError) {
+        console.error('Erro ao enviar email:', emailError);
+        // Continua mesmo se o email falhar
+      }
     }
     
     // Log da mensagem (em produção, salvar no banco de dados)
-    console.log('Nova mensagem de contato:', {
+    console.log('Nova mensagem de contato registrada:', {
       nome,
       email,
       telefone,
       empreendimento,
       mensagem,
+      emailSent,
       timestamp: new Date().toISOString()
     });
     
     res.json({
       success: true,
-      message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
+      message: 'Mensagem recebida com sucesso! Entraremos em contato em breve.',
+      emailSent
     });
     
   } catch (error) {
-    console.error('Erro ao enviar mensagem:', error);
+    console.error('Erro ao processar mensagem de contato:', error);
     res.status(500).json({
       success: false,
-      error: 'Erro interno do servidor. Tente novamente mais tarde.'
+      error: 'Erro interno do servidor. Tente novamente mais tarde.',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }
 });
