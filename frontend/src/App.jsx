@@ -6,7 +6,7 @@ import Empreendimentos from './pages/Empreendimentos'
 import Sobre from './pages/Sobre'
 import Noticias from './pages/Noticias'
 import NoticiaDetalhes from './pages/NoticiaDetalhes'
-import Contato from './pages/Contato'
+import ContatoSimples from './pages/ContatoSimples'
 import CarolinaCaliari from './pages/CarolinaCaliari'
 import HomeExperience from './pages/HomeExperience'
 import ChiabaiMartins from './pages/ChiabaiMartins'
@@ -24,7 +24,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/noticias/:slug" element={<NoticiaDetalhes />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/contato" element={<ContatoSimples />} />
           <Route path="/carolina-caliari" element={<CarolinaCaliari />} />
           <Route path="/home-experience" element={<HomeExperience />} />
           <Route path="/chiabai-martins" element={<ChiabaiMartins />} />
