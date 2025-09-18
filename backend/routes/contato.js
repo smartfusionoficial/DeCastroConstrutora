@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransporter({
 // POST /api/contato - Enviar mensagem de contato
 router.post('/', async (req, res) => {
   try {
-    const { nome, email, telefone, empreendimento, mensagem } = req.body;
+    const { nome, email, telefone, empreendimento, mensagem, destinatario } = req.body;
     
     // Validação básica
     if (!nome || !email || !mensagem) {
@@ -37,8 +37,8 @@ router.post('/', async (req, res) => {
     
     // Preparar email
     const mailOptions = {
-      from: process.env.SMTP_USER,
-      to: process.env.CONTACT_EMAIL || 'contato@decastroconstrutora.com.br',
+      from: process.env.SMTP_USER || 'noreply@decastroconstrutora.com.br',
+      to: destinatario || 'borghborges@gmail.com',
       subject: `Novo contato do site - ${empreendimento || 'Geral'}`,
       html: `
         <h2>Nova mensagem do site De Castro Construtora</h2>

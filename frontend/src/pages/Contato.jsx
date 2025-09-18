@@ -35,7 +35,7 @@ const Contato = () => {
         },
         body: JSON.stringify({
           ...formData,
-          destinatario: 'contato@decastroconstrutora.com.br'
+          destinatario: 'borghborges@gmail.com'
         })
       })
 
