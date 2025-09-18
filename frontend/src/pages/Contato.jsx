@@ -23,11 +23,39 @@ const Contato = () => {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Aqui você implementaria o envio do formulário
-    console.log('Dados do formulário:', formData)
-    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.')
+    
+    try {
+      // Enviar dados para o backend
+      const response = await fetch('/api/contato', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          destinatario: 'contato@decastroconstrutora.com.br'
+        })
+      })
+
+      if (response.ok) {
+        alert('Mensagem enviada com sucesso! Entraremos em contato em breve.')
+        // Limpar formulário
+        setFormData({
+          nome: '',
+          email: '',
+          telefone: '',
+          empreendimento: '',
+          mensagem: ''
+        })
+      } else {
+        throw new Error('Erro ao enviar mensagem')
+      }
+    } catch (error) {
+      console.error('Erro:', error)
+      alert('Erro ao enviar mensagem. Tente novamente ou entre em contato via WhatsApp.')
+    }
   }
 
   const contatos = [
@@ -300,14 +328,7 @@ const Contato = () => {
               Agende uma visita aos nossos empreendimentos e descubra por que a De Castro 
               é a escolha certa para o seu futuro.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-              >
-                Agendar Visita
-              </Button>
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"

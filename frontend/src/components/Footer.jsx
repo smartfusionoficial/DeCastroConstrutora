@@ -1,8 +1,10 @@
 import { Button } from '@/components/ui/button'
 import { Phone, MessageCircle, Mail, MapPin, Instagram, Facebook, Youtube } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 
 const Footer = () => {
+  const navigate = useNavigate()
   const contatos = [
     {
       tipo: "Telefone Geral",
@@ -109,6 +111,7 @@ const Footer = () => {
             <Button 
               variant="outline" 
               className="mt-6 border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
+              onClick={() => navigate('/contato')}
             >
               Ver no Mapa
             </Button>

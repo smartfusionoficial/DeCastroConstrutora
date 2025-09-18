@@ -79,13 +79,6 @@ const VilaVelhaSection = () => {
                 </div>
               ))}
             </div>
-            
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
-            >
-              CLIQUE AQUI
-            </Button>
           </div>
         </div>
       </div>
