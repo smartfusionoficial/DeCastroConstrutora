@@ -84,7 +84,7 @@ ${empreendimento ? `Interesse em: ${empreendimento}` : ''}
 
 Mensagem: ${mensagem}`
 
-    const whatsappUrl = `https://wa.me/5527988296965?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/5527992784090?text=${encodeURIComponent(whatsappMessage)}`
     
     // Abrir WhatsApp
     window.open(whatsappUrl, '_blank')
@@ -109,7 +109,7 @@ Mensagem: ${mensagem}`
     {
       icon: <Phone className="h-6 w-6 text-blue-600" />,
       titulo: 'Telefone',
-      info: '(27) 3229-9999\n(27) 98829-6965'
+      info: '(27) 3229-9999\n(27) 99278-4090'
     },
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
@@ -380,7 +380,7 @@ Mensagem: ${mensagem}`
                     <Button 
                       size="lg" 
                       className="w-full bg-green-600 hover:bg-green-700 text-white transform hover:scale-105 transition-all duration-300"
-                      onClick={() => window.open('https://wa.me/5527988296965', '_blank')}
+                      onClick={() => window.open('https://wa.me/5527992784090', '_blank')}
                     >
                       <MessageCircle className="mr-2 h-5 w-5" />
                       Falar no WhatsApp
@@ -431,7 +431,7 @@ Mensagem: ${mensagem}`
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5527988296965', '_blank')}
+                onClick={() => window.open('https://wa.me/5527992784090', '_blank')}
               >
                 WhatsApp Direto
               </Button>

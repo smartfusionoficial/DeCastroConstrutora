@@ -14,9 +14,9 @@ const Footer = () => {
     },
     {
       tipo: "WhatsApp da Construtora",
-      valor: "(27) 98829-6965",
+      valor: "(27) 99278-4090",
       icon: <MessageCircle className="h-5 w-5" />,
-      link: "https://wa.me/5527988296965"
+      link: "https://wa.me/5527992784090"
     },
     {
       tipo: "WhatsApp do Comercial",

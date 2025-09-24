@@ -94,7 +94,7 @@ const ChiabaiMartins = () => {
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5527988296965', '_blank')}
+                onClick={() => window.open('https://wa.me/5527992784090', '_blank')}
               >
                 Contate-nos via WhatsApp
               </Button>
@@ -280,7 +280,7 @@ const ChiabaiMartins = () => {
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5527988296965', '_blank')}
+                onClick={() => window.open('https://wa.me/5527992784090', '_blank')}
               >
                 Falar com Consultor
               </Button>
