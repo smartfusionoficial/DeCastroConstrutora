@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 const WhatsAppButton = ({ 
   message = "Olá! Gostaria de saber mais informações sobre os empreendimentos da De Castro Construtora.",
-  phone = "5527306269650",
+  phone = "5527992784090",
   className = "",
   size = "icon",
   variant = "floating"

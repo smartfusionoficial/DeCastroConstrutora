@@ -49,7 +49,7 @@ const Bacutia = () => {
 
   const handleWhatsApp = () => {
     const message = "Olá! Gostaria de saber mais informações sobre o empreendimento Bacutia - um lugar de paz!";
-    const phone = "5527306269650";
+    const phone = "5527992784090";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 

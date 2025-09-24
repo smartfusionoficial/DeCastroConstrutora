@@ -64,7 +64,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-gray-800 hover:bg-gray-100 border-2 border-white px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://wa.me/5527306269650?text=Olá! Gostaria de saber mais informações sobre o empreendimento Carolina Caliari.', '_blank')}
+                onClick={() => window.open('https://wa.me/5527992784090?text=Olá! Gostaria de saber mais informações sobre o empreendimento Carolina Caliari.', '_blank')}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp
@@ -79,7 +79,7 @@ const HeroSection = () => {
         <Button 
           size="icon" 
           className="bg-green-500 hover:bg-green-600 rounded-full w-14 h-14 shadow-lg animate-bounce hover:animate-none transform hover:scale-110 transition-all duration-300"
-          onClick={() => window.open('https://wa.me/5527306269650?text=Olá! Gostaria de saber mais informações sobre os empreendimentos da De Castro Construtora.', '_blank')}
+          onClick={() => window.open('https://wa.me/5527992784090?text=Olá! Gostaria de saber mais informações sobre os empreendimentos da De Castro Construtora.', '_blank')}
           title="Falar no WhatsApp"
         >
           <MessageCircle className="h-6 w-6" />
