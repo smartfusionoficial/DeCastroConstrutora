@@ -33,7 +33,7 @@ const Empreendimentos = () => {
       localizacao: 'Itapoã, Vila Velha/ES',
       quartos: '3 quartos com até 3 suítes',
       unidades: '98 unidades',
-      status: 'Concluído',
+      status: 'Entregue',
       statusColor: 'bg-blue-600',
       image: carolinaImage,
       link: '/carolina-caliari'
@@ -66,6 +66,19 @@ const Empreendimentos = () => {
     },
     {
       id: 5,
+      nome: 'Las Salinas',
+      subtitulo: 'Residencial',
+      descricao: 'Localizado em Coqueiral de Itaparica, com área de lazer completa e próximo à praia.',
+      localizacao: 'Itaparica, Vila Velha/ES',
+      quartos: '02 suítes',
+      unidades: 'Finalizado',
+      status: '100% Vendido',
+      statusColor: 'bg-red-500',
+      image: '/src/assets/las-salinas/003.webp',
+      link: '/las-salinas'
+    },
+    {
+      id: 6,
       nome: 'De Castro',
       subtitulo: 'Construtora',
       descricao: 'Novo projeto em desenvolvimento. Em breve mais informações sobre este lançamento.',

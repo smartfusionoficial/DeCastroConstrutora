@@ -397,15 +397,15 @@ const Bacutia = () => {
         <section className="py-20 px-4 bg-blue-50">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8 text-gray-800">Gestão Hoteleira Inteligente</h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="text-left">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Maximização de Diária</h3>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                   Sistema de gestão hoteleira inédita na região mais luxuosa do ES. Formatamos o 
                   empreendimento para que exclusividade, conforto e facilidade sejam os marcos 
                   de nossos momentos de lazer.
                 </p>
-                <ul className="space-y-3 text-gray-700">
+                <ul className="space-y-3 text-gray-700 text-left max-w-2xl mx-auto">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                     Gestão profissional especializada
@@ -423,13 +423,6 @@ const Bacutia = () => {
                     Redução de custos operacionais
                   </li>
                 </ul>
-              </div>
-              <div>
-                <LazyImage
-                  src="/images/bacutia/005.webp"
-                  alt="Hall de entrada"
-                  className="w-full rounded-lg shadow-lg"
-                />
               </div>
             </div>
           </div>

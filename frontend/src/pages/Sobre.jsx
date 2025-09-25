@@ -81,22 +81,28 @@ const Sobre = () => {
                 </h2>
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    Estamos cansados de ouvir essa pergunta.
+                    Contar toda a trajetória da De Castro é falar de quase quatro décadas de dedicação à construção. Para isso, temos uma imagem que representa muito bem esse caminho, mas aqui vamos além do que ela mostra.
                   </p>
                   <p>
-                    E é por isso criamos um livro de bolso.
+                    Tudo começou com o sonho do seu Enoque. De origem humilde, ele saiu de casa ainda muito jovem para trabalhar e sempre prezou pelo esforço e pelo trabalho digno. Foi auxiliar de pedreiro, faxineiro, office boy, auxiliar administrativo, corretor de imóveis, empresário e muito mais. Independentemente da função, nunca faltou dedicação.
                   </p>
                   <p>
-                    Contar toda a história da De Castro, o sobrenome da família, pode te entediar, 
-                    pois são mais de 3 décadas construindo. Não daria para fazer isso em poucas páginas.
+                    Com o passar do tempo, vieram os prédios, os aprendizados e também a segunda geração. Em determinado momento, seu Enoque decidiu deixar a incorporação residencial e passou a se dedicar à construção de galpões industriais. Foi então que Leandro, seu filho mais novo, resolveu seguir os passos do pai. Ingressou na faculdade de Engenharia aos 16 anos e, desde 2007, conduz a De Castro Construtora no segmento residencial, mantendo viva a essência da família.
                   </p>
                   <p>
-                    Pagar para um jornal fazer isso? Não! Pagar para alguém falar bem da gente? 
-                    Definitivamente não.
+                    Somos reconhecidos não apenas pela nossa longa trajetória, mas, sobretudo, pelas superações que marcaram nossa história — principalmente pelo desafio constante de inovar. Sabia que cada um de nossos empreendimentos questiona e supera o que já fizemos antes? Se não for para trazer algo pioneiro para o mercado e para nós mesmos, simplesmente não lançamos. Inovar está em nosso DNA.
                   </p>
                   <p>
-                    Fazer 10 obras ao mesmo tempo para mostrar grandeza? Isso você encontra na 
-                    história de grandes construtoras que já não estão mais no mercado.
+                    Estamos sempre aprendendo a crescer sem abrir mão desse DNA. Por isso, não espere grandeza em volume de empreendimentos, mas sim em inovação e consistência.
+                  </p>
+                  <p>
+                    Nos últimos dez anos, um ponto passou a transformar ainda mais nossos projetos: as pesquisas de comportamento humano. Hoje, todos os nossos empreendimentos nascem também a partir de estudos sobre como as pessoas vivem e se relacionam, tentamos mostrar uma mensagem de como podemos ter mais consciência individual e coletiva. Dessa forma, sentimos que não construímos apenas prédios, mas algo maior e intangível, transformação em nós.
+                  </p>
+                  <p>
+                    No meio da nossa caminhada, o propósito de compartilhar uma mensagem através dos nossos empreendimentos desafiando nossos comportamentos como sociedade e individualmente ecoou dentro de nós e entrou em nosso DNA.
+                  </p>
+                  <p>
+                    Conscientes de que devemos materializar nosso propósito em nosso dia a dia, compartilhamos nossa vontade de superar tijolo. Nenhuma empresa é maior que o seu propósito, nosso desejo é que esse continue perpetuando não em uma instituição, mas dentro de todos nós.
                   </p>
                 </div>
                 <div className="mt-8">
@@ -170,13 +176,13 @@ const Sobre = () => {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* História da Família */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fade-up">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Nossa Trajetória
+                História da Família De Castro
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Mais de 40 anos construindo sonhos e transformando vidas em Vila Velha.
@@ -184,37 +190,14 @@ const Sobre = () => {
             </div>
           </AnimatedSection>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Linha vertical */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-              
-              {timeline.map((item, index) => (
-                <AnimatedSection key={index} animation="fade-up" delay={index * 50}>
-                  <div className="relative flex items-start mb-12">
-                    {/* Ponto na timeline */}
-                    <div className="absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                    
-                    {/* Conteúdo */}
-                    <div className="ml-20">
-                      <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div className="flex items-center mb-3">
-                          <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mr-4">
-                            {item.ano}
-                          </span>
-                          <h3 className="text-lg font-bold text-gray-800">
-                            {item.titulo}
-                          </h3>
-                        </div>
-                        <p className="text-gray-600 leading-relaxed">
-                          {item.descricao}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <AnimatedSection animation="fade-up">
+              <LazyImage
+                src="/src/assets/historia_familia_decastro.webp"
+                alt="História da Família De Castro - Timeline de empreendimentos"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </AnimatedSection>
           </div>
         </div>
       </section>

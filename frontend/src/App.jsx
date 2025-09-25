@@ -11,6 +11,7 @@ import CarolinaCaliari from './pages/CarolinaCaliari'
 import HomeExperience from './pages/HomeExperience'
 import ChiabaiMartins from './pages/ChiabaiMartins'
 import Bacutia from './pages/Bacutia'
+import LasSalinas from './pages/LasSalinas'
 import './App.css'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/home-experience" element={<HomeExperience />} />
           <Route path="/chiabai-martins" element={<ChiabaiMartins />} />
           <Route path="/bacutia" element={<Bacutia />} />
+          <Route path="/las-salinas" element={<LasSalinas />} />
         </Routes>
         <Footer />
       </div>
