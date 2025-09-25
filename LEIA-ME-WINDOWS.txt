@@ -1,0 +1,26 @@
+🏗️ DE CASTRO CONSTRUTORA - EXECUÇÃO NO WINDOWS
+
+📋 PRÉ-REQUISITO:
+   - Node.js instalado (https://nodejs.org/)
+
+🚀 COMO EXECUTAR:
+   1. Clique duas vezes em: INICIAR-WINDOWS.bat
+   2. Aguarde o navegador abrir automaticamente
+   3. URL: http://localhost:5173
+
+❌ PROBLEMAS?
+   - Leia o arquivo: SOLUCAO-PROBLEMAS-WINDOWS.md
+
+📁 ESTRUTURA:
+   DeCastroConstrutora/
+   ├── frontend/              ← Código do site
+   ├── backend/               ← Servidor (opcional)
+   ├── INICIAR-WINDOWS.bat    ← EXECUTE ESTE ARQUIVO
+   └── LEIA-ME-WINDOWS.txt    ← Este arquivo
+
+💡 DICA:
+   Se der erro, certifique-se de estar na pasta raiz
+   (onde está o arquivo INICIAR-WINDOWS.bat)
+
+✅ PRONTO!
+   O site estará rodando em http://localhost:5173
