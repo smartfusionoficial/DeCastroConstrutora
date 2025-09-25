@@ -45,10 +45,9 @@ const EmpreendimentosSection = () => {
       id: 4,
       nome: 'CHIABAI MARTINS',
       subtitulo: 'RESIDENCIAL',
-      status: '100% VENDIDO',
-      status2: '100% FINALIZADO',
-      statusColor: 'bg-orange-500',
-      borderColor: 'border-orange-500',
+      status: 'ENTREGUE',
+      statusColor: 'bg-blue-600',
+      borderColor: 'border-blue-600',
       image: chiabaiImage,
       link: '/chiabai-martins'
     }
