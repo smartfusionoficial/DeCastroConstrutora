@@ -73,8 +73,8 @@ const ChiabaiMartins = () => {
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection animation="fade-up">
             <div className="mb-6">
-              <Badge className="bg-red-500 text-white px-6 py-2 text-lg font-semibold mb-4">
-                100% VENDIDO - 100% FINALIZADO
+              <Badge className="bg-blue-500 text-white px-6 py-2 text-lg font-semibold mb-4">
+                ENTREGUE
               </Badge>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -84,13 +84,7 @@ const ChiabaiMartins = () => {
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
               RESIDENCIAL
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-              >
-                Ver Outros Empreendimentos
-              </Button>
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
@@ -269,14 +263,7 @@ const ChiabaiMartins = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Conheça nossos outros empreendimentos disponíveis e encontre o apartamento ideal para você.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
-              >
-                Ver Outros Empreendimentos
-              </Button>
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg transform hover:scale-105 transition-all duration-300"
