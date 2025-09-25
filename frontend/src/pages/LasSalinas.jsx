@@ -33,7 +33,7 @@ const LasSalinas = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <LazyImage
-            src="/src/assets/las-salinas/001.webp"
+            src="/images/las-salinas/001.webp"
             alt="Las Salinas - Vista do mar"
             className="w-full h-full object-cover"
           />
@@ -95,7 +95,7 @@ const LasSalinas = () => {
 
             <AnimatedSection animation="fade-up" delay={200}>
               <LazyImage
-                src="/src/assets/las-salinas/002.webp"
+                src="/images/las-salinas/002.webp"
                 alt="Las Salinas - Descrição"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -118,7 +118,7 @@ const LasSalinas = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="fade-up">
               <LazyImage
-                src="/src/assets/las-salinas/003.webp"
+                src="/images/las-salinas/003.webp"
                 alt="Las Salinas - Fachada do edifício"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -166,7 +166,7 @@ const LasSalinas = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <AnimatedSection animation="fade-up">
               <LazyImage
-                src="/src/assets/las-salinas/004.webp"
+                src="/images/las-salinas/004.webp"
                 alt="Las Salinas - Área de lazer"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -186,7 +186,7 @@ const LasSalinas = () => {
 
           <AnimatedSection animation="fade-up">
             <LazyImage
-              src="/src/assets/las-salinas/005.webp"
+              src="/images/las-salinas/005.webp"
               alt="Las Salinas - Churrasqueira"
               className="w-full h-auto rounded-lg shadow-lg"
             />

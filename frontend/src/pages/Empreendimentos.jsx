@@ -74,21 +74,8 @@ const Empreendimentos = () => {
       unidades: 'Finalizado',
       status: '100% Vendido',
       statusColor: 'bg-red-500',
-      image: '/src/assets/las-salinas/003.webp',
+      image: '/images/las-salinas/003.webp',
       link: '/las-salinas'
-    },
-    {
-      id: 6,
-      nome: 'De Castro',
-      subtitulo: 'Construtora',
-      descricao: 'Novo projeto em desenvolvimento. Em breve mais informações sobre este lançamento.',
-      localizacao: 'Vila Velha/ES',
-      quartos: 'A definir',
-      unidades: 'Em planejamento',
-      status: 'Novo Projeto',
-      statusColor: 'bg-blue-500',
-      image: decastroImage,
-      link: '/de-castro'
     }
   ]
 
