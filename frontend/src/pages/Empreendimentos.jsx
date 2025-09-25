@@ -59,8 +59,8 @@ const Empreendimentos = () => {
       localizacao: 'Praia de Itaparica, Vila Velha',
       quartos: '2 e 3 quartos',
       unidades: 'Finalizado',
-      status: '100% Vendido',
-      statusColor: 'bg-red-500',
+      status: 'Entregue',
+      statusColor: 'bg-blue-500',
       image: chiabaiImage,
       link: '/chiabai-martins'
     },

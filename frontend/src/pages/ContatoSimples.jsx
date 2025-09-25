@@ -105,7 +105,7 @@ Mensagem: ${mensagem}`
     {
       icon: <Phone className="h-6 w-6 text-blue-600" />,
       titulo: 'Telefone',
-      info: '(27) 3229-9999\n(27) 99278-4090'
+      info: '(27) 3062-6965\n(27) 99278-4090'
     },
     {
       icon: <Mail className="h-6 w-6 text-blue-600" />,
