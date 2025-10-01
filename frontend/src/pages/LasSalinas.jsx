@@ -44,7 +44,7 @@ const LasSalinas = () => {
           <AnimatedSection animation="fade-up" delay={200}>
             <div className="mb-6">
               <Badge className="bg-blue-600 text-white px-6 py-2 text-lg mb-4">
-                100% Vendido
+                ENTREGUE
               </Badge>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
                 LAS SALINAS
