@@ -50,10 +50,10 @@ const HomeExperience = () => {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         
-        {/* Badge 100% Vendido */}
+        {/* Badge Entregue */}
         <div className="absolute top-20 left-1/2 transform -translate-x-1/2 z-20">
-          <Badge className="bg-red-600 text-white text-lg px-6 py-2 animate-pulse">
-            100% VENDIDO
+          <Badge className="bg-green-600 text-white text-lg px-6 py-2">
+            ENTREGUE
           </Badge>
         </div>
         
