@@ -193,7 +193,7 @@ const Sobre = () => {
           <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fade-up">
               <LazyImage
-                src="/images/historia-familia-decastro.webp"
+                src="/historia-familia.png"
                 alt="História da Família De Castro - Timeline de empreendimentos"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
